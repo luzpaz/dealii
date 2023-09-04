@@ -17,7 +17,7 @@ jobs:
     runs-on: [ubuntu-20.04]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: setup
       run: |
         ./contrib/utilities/download_clang_format
@@ -70,7 +70,7 @@ jobs:
     runs-on: [ubuntu-22.04]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: modules
       run: |
         sudo apt-get install -y software-properties-common
@@ -143,7 +143,7 @@ jobs:
       CUDA_ROOT: /usr/local/cuda
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: modules
       run: |
         wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
@@ -164,7 +164,7 @@ jobs:
       run: |
         mpicc -v
         cmake --version
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         repository: kokkos/kokkos
         ref: 3.7.00
@@ -225,7 +225,7 @@ jobs:
     runs-on: [ubuntu-20.04]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: setup apt repo
       run: |
         # oneapi-ci/scripts/setup_apt_repo_linux.sh
