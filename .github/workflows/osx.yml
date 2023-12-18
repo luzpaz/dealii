@@ -47,14 +47,14 @@ jobs:
         make VERBOSE=1 -j2
         make -j3 test # quicktests
     - name: archive error 1
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       continue-on-error: true
       with:
         name: osx-serial-CMakeOutput.log
         path: CMakeFiles/CMakeOutput.log
     - name: archive error 2
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       continue-on-error: true
       with:
@@ -98,14 +98,14 @@ jobs:
         make VERBOSE=1 -j2
         make -j3 test #quicktests
     - name: archive error 1
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       continue-on-error: true
       with:
         name: osx-parallel64-CMakeOutput.log
         path: CMakeFiles/CMakeOutput.log
     - name: archive error 2
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       continue-on-error: true
       with:
