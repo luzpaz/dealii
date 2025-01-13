@@ -315,7 +315,7 @@ jobs:
             numdiff \
             openmpi-bin \
             libboost-all-dev
-    - uses: lukka/get-cmake@v3.27.9
+    - uses: lukka/get-cmake@v3.31.4
     - name: info
       run: |
         mpicc -v
@@ -410,7 +410,7 @@ jobs:
             numdiff \
             openmpi-bin \
             libboost-all-dev
-    - uses: lukka/get-cmake@v3.27.9
+    - uses: lukka/get-cmake@v3.31.4
     - name: info
       run: |
         mpicc -v
